@@ -442,6 +442,7 @@ video {
     transform: translate(0, 150px);
   }
 }
+
 .shade {
   position: absolute;
   top: 100vh;
@@ -1154,5 +1155,54 @@ body {
 }
 
 .agenda p {
+  font-family: "JosefinSans";
+}
+
+.why-mtd-card-container {
+  margin: 0 auto;
+  max-width: 948px;
+  align-items: start;
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(auto-fit, 300px);
+  /* justify-content: center; */
+}
+
+.why-mtd-card-container .card {
+  background-color: var(--blue);
+  border-radius: 5px;
+  color: white;
+  height: 200px;
+  /* padding: 24px 4 16px; */
+  padding: 16px;
+  text-align: left;
+  text-shadow: 1px 1px 0 var(--purple);
+}
+
+.why-mtd-card-container .card h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  /* color: var(--black) */
+}
+
+.why-mtd-card-container .card p {
+  font-size: 16px;
+}
+
+.fixed-register-button {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 99999;
+  background-size: 800% 800%;
+  padding: 10px 12px;
+  border-radius: 25px;
+  transition: 0.8s;
+  background: linear-gradient(222deg, #037ef3, #7552cc, #2a44ff, #7126f1);
+  -webkit-animation: AnimationName 5s ease infinite;
+  -moz-animation: AnimationName 205s ease infinite;
+  animation: AnimationName 5s ease infinite;
+  color: white;
+  text-decoration: none;
   font-family: "JosefinSans";
 }
