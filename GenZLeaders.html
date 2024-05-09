@@ -1,115 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A2030 - Registration</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <header>
-      <div class="container">
-        <nav>
-          <a href="index.html"><img src="assets/img/logo.webp" alt="" /></a>
-          <ul>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="">Events</a></li>
-            <li><a href="">Speakers</a></li>
-            <li><a href="">Blog</a></li>
-          </ul>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A2030 - Registration</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/agenda-style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="index.html"><img src="assets/img/logo.webp" alt="" /></a>
+        <ul>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="">Events</a></li>
+          <li><a href="">Speakers</a></li>
+          <li><a href="">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="event-hero">
+      <picture>
+        <source media="(max-width: 767px)" srcset="assets/img/events3_mobile.webp" />
+        <source media="(min-width: 787px)" srcset="assets/img/events3.webp" />
+        <img src="assets/img/events3.webp" alt="" width="100%" />
+      </picture>
+    </section>
+    <section class="global-event-desc container">
+      <div class="global-event-content-container">
+        <h2 class="tapered">Event explanation</h2>
+        <p>
+          This event is to showcase experiences different in fields or areas
+          but united in their success and their relevancy to Gen Z when it
+          comes to their products or industry. <br /><br />
+          You can expect to listen to different points of view when it comes
+          to shaping industries and how to overcome the challenges Gen Z
+          leaders face and how were they able to break the stereotypical Gen Z
+          view.
+        </p>
       </div>
-    </header>
-
-    <main>
-      <section class="event-hero">
-        <picture>
-          <source
-            media="(max-width: 767px)"
-            srcset="assets/img/events3_mobile.webp"
-          />
-          <source media="(min-width: 787px)" srcset="assets/img/events3.webp" />
-          <img src="assets/img/events3.webp" alt="" width="100%" />
-        </picture>
-      </section>
-      <section class="global-event-desc container">
-        <div class="global-event-content-container">
-          <h2 class="tapered">Event explanation</h2>
+      <div class="blob-container">
+        <div class="blobs">
+          <div class="blob a"></div>
+          <div class="blob b"></div>
+          <div class="blob c"></div>
+        </div>
+      </div>
+    </section>
+    <section class="global-event-details container">
+      <div class="global-event-details-container">
+        <div class="global-event-details-container-left">
           <p>
-            This event is to showcase experiences different in fields or areas
-            but united in their success and their relevancy to Gen Z when it
-            comes to their products or industry. <br /><br />
-            You can expect to listen to different points of view when it comes
-            to shaping industries and how to overcome the challenges Gen Z
-            leaders face and how were they able to break the stereotypical Gen Z
-            view.
+            <span class="tapered" style="
+                  background-size: 100% 0.2em;
+                  background-position: center 27px;
+                ">Event type:</span>
+            Panel discussion - virutal
+          </p>
+          <p>
+            <span class="tapered" style="
+                  background-size: 100% 0.2em;
+                  background-position: center 27px;
+                ">Target audience:</span>
+            MCs & LCPs
+          </p>
+          <p>
+            <span class="tapered" style="
+                  background-size: 100% 0.2em;
+                  background-position: center 27px;
+                ">Event scope:</span>
+            Global
+          </p>
+          <p>
+            <span class="tapered" style="
+                  background-size: 100% 0.2em;
+                  background-position: center 27px;
+                ">Event date:</span>
+            20th of June 2024
           </p>
         </div>
-        <div class="blob-container">
-          <div class="blobs">
-            <div class="blob a"></div>
-            <div class="blob b"></div>
-            <div class="blob c"></div>
+        <div class="global-event-details-container-right">
+          <img src="assets/img/pola/1.webp" alt="" />
+          <img src="assets/img/pola/2.webp" alt="" />
+          <img src="assets/img/pola/3.webp" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="agenda-wrapper hero header">
+      <div class="agenda-schedule">
+        <div class="agenda-container">
+          <h2 class="agenda-title">Event Agenda</h2>
+          <div class="schedule-group">
+            <div class="schedule-timeline"></div>
+            <div class="schedule-cards-group">
+              <div class="schedule-cards__row">
+                <div class="schedule-card">
+                  <div class="schedule-card__text">
+                    <h4 class="time">10:00 - 12:00</h4>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo pariatur
+                      minima ea </p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-cards__row">
+                <div class="schedule-card">
+                  <div class="schedule-card__text">
+                    <h4 class="time">12:00 - 14:00</h4>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo pariatur
+                      minima ea </p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-cards__row">
+                <div class="schedule-card">
+                  <div class="schedule-card__text">
+                    <h4 class="time">14:00 - 14:30</h4>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo pariatur
+                      minima ea </p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-cards__row">
+                <div class="schedule-card">
+                  <div class="schedule-card__text">
+                    <h4 class="time">Closing</h4>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo pariatur
+                      minima ea </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-      <section class="global-event-details container">
-        <div class="global-event-details-container">
-          <div class="global-event-details-container-left">
-            <p>
-              <span
-                class="tapered"
-                style="
-                  background-size: 100% 0.2em;
-                  background-position: center 27px;
-                "
-                >Event type:</span
-              >
-              Panel discussion - virutal
-            </p>
-            <p>
-              <span
-                class="tapered"
-                style="
-                  background-size: 100% 0.2em;
-                  background-position: center 27px;
-                "
-                >Target audience:</span
-              >
-              MCs & LCPs
-            </p>
-            <p>
-              <span
-                class="tapered"
-                style="
-                  background-size: 100% 0.2em;
-                  background-position: center 27px;
-                "
-                >Event scope:</span
-              >
-              Global
-            </p>
-            <p>
-              <span
-                class="tapered"
-                style="
-                  background-size: 100% 0.2em;
-                  background-position: center 27px;
-                "
-                >Event date:</span
-              >
-              20th of June 2024
-            </p>
-          </div>
-          <div class="global-event-details-container-right">
-            <img src="assets/img/pola/1.webp" alt="" />
-            <img src="assets/img/pola/2.webp" alt="" />
-            <img src="assets/img/pola/3.webp" alt="" />
-          </div>
-        </div>
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
