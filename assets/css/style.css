@@ -1242,6 +1242,7 @@ body {
 .five-years h2 {
   font-size: 1.3rem;
   margin-bottom: 50px;
+  display: inline-block;
 }
 
 .learn-more-button {
