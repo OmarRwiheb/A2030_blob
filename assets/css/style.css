@@ -5,6 +5,12 @@
 }
 
 @font-face {
+  font-family: "FantasyLand";
+  src: url("../fonts/FantasyLand.ttf");
+  font-display: swap;
+}
+
+@font-face {
   font-family: "JosefinSans";
   src: url("../fonts/JosefinSans-VariableFont_wght.ttf");
   font-display: swap;
@@ -1215,4 +1221,41 @@ body {
   color: white;
   text-decoration: none;
   font-family: "JosefinSans";
+}
+
+.five-years {
+  margin: 30px;
+  text-align: center;
+}
+
+.h2-number {
+  font-family: "FantasyLand";
+  font-size: 3rem;
+  line-height: .1;
+  color: var(--blue);
+}
+
+.h2-spacing {
+  margin: 2rem;
+}
+
+.five-years h2 {
+  font-size: 1.7rem;
+  margin-bottom: 50px;
+}
+
+.learn-more-button {
+  background-size: 800% 800%;
+  font-size: 1.5rem;
+  padding: 15px 20px;
+  border-radius: 25px;
+  transition: 0.8s;
+  background: linear-gradient(222deg, #037ef3, #7552cc, #2a44ff, #7126f1);
+  -webkit-animation: AnimationName 5s ease infinite;
+  -moz-animation: AnimationName 205s ease infinite;
+  animation: AnimationName 5s ease infinite;
+  color: white;
+  text-decoration: none;
+  font-family: "JosefinSans";
+
 }
