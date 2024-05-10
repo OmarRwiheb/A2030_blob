@@ -1185,6 +1185,7 @@ body {
   padding: 16px;
   text-align: left;
   text-shadow: 1px 1px 0 var(--purple);
+  margin: 10px;
 }
 
 .why-mtd-card-container .why-mtd-card h1 {
