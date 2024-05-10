@@ -1158,35 +1158,44 @@ body {
   font-family: "JosefinSans";
 }
 
-.why-mtd-card-container {
-  margin: 0 auto;
-  max-width: 948px;
-  align-items: start;
-  display: grid;
-  grid-gap: 16px;
-  grid-template-columns: repeat(auto-fit, 300px);
-  /* justify-content: center; */
+.why-container {
+  margin-top: 100px;
+  /* display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto; */
 }
 
-.why-mtd-card-container .card {
+.why-mtd-card-container {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.why-mtd-card-container .why-mtd-card {
+  padding: 1rem;
+  height: 4rem;
   background-color: var(--blue);
   border-radius: 5px;
   color: white;
   height: 200px;
-  /* padding: 24px 4 16px; */
   padding: 16px;
   text-align: left;
   text-shadow: 1px 1px 0 var(--purple);
 }
 
-.why-mtd-card-container .card h1 {
-  font-size: 20px;
+.why-mtd-card-container .why-mtd-card h1 {
+  font-size: 24px;
   margin-bottom: 20px;
-  /* color: var(--black) */
+  font-family: "Montserrat";
 }
 
-.why-mtd-card-container .card p {
+.why-mtd-card-container .why-mtd-card p {
   font-size: 16px;
+  font-family: "JosefinSans";
 }
 
 .fixed-register-button {
