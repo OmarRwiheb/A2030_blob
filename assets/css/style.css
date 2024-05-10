@@ -1257,5 +1257,9 @@ body {
   color: white;
   text-decoration: none;
   font-family: "JosefinSans";
+}
 
+.learn-more-button:hover {
+  color: var(--black);
+  background: white;
 }
