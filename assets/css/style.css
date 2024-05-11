@@ -361,9 +361,10 @@ video {
   background: transparent;
   width: 100vw;
   height: 100vh;
-  /* overflow: hidden; */
+  overflow: hidden;
   position: absolute;
 }
+
 .blob-container:after {
   content: "";
   width: 100vw;
