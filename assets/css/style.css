@@ -42,6 +42,7 @@ body {
   background-color: var(--black);
   scroll-behavior: smooth;
   overflow-x: hidden;
+  position: relative;
 }
 
 p {
@@ -1206,9 +1207,10 @@ body {
 }
 
 .fixed-register-button {
+  display: none;
   position: fixed;
-  bottom: 5%;
-  right: 5%;
+  bottom: 3%;
+  right: 4%;
   z-index: 99999;
   background-size: 800% 800%;
   padding: 10px 12px;
@@ -1359,6 +1361,9 @@ body {
   }
   header nav ul {
     display: none;
+  }
+  .fixed-register-button {
+    display: block;
   }
 }
 
