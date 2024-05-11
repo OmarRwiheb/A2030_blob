@@ -1,31 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A2030 - Registration</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <header>
-      <div class="container">
-        <nav>
-          <a href="index.html"><img src="assets/img/logo.webp" alt="" /></a>
-          <ul>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="">Events</a></li>
-            <li><a href="">Speakers</a></li>
-            <li><a href="">Blog</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A2030 - Registration</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
 
-    <main>
-      <div data-tf-live="01HX9FHG95N03CRW7PAXHHEZAF"></div>
-      <script src="//embed.typeform.com/next/embed.js"></script>
-    </main>
-  </body>
+<body>
+  <header style="z-index: 99999;">
+    <div class="container">
+      <nav>
+        <a href="index.html"><img src="assets/img/logo.webp" alt="" /></a>
+        <ul>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="">Events</a></li>
+          <li><a href="">Speakers</a></li>
+          <li><a href="">Blog</a></li>
+        </ul>
+        <div class="hamburger">
+          <button>
+            <div class="bar"></div>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="mobile-nav" style="display: none; z-index: 999999;">
+    <div class="nav-blocker"></div>
+    <div class="nav-content">
+      <a style="display: flex; justify-content: left" href="index.html"><img class="logo" src="assets/img/logo.webp"
+          alt="" /></a>
+      <ul>
+        <li style="margin-top: 19px;"><a href="register.html">Register</a></li>
+        <li style="margin-top: 19px;"><a href="">Events</a></li>
+        <li style="margin-top: 19px;"><a href="">Speakers</a></li>
+        <li style="margin-top: 19px;"><a href="">Blog</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <div data-tf-live="01HX9FHG95N03CRW7PAXHHEZAF"></div>
+    <script src="//embed.typeform.com/next/embed.js"></script>
+  </main>
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>

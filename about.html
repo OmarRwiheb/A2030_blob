@@ -24,9 +24,27 @@
           <li><a href="">Speakers</a></li>
           <li><a href="">Blog</a></li>
         </ul>
+        <div class="hamburger">
+          <button>
+            <div class="bar"></div>
+          </button>
+        </div>
       </nav>
     </div>
   </header>
+  <div class="mobile-nav" style="display: none">
+    <div class="nav-blocker"></div>
+    <div class="nav-content">
+      <a style="display: flex; justify-content: left" href="index.html"><img class="logo" src="assets/img/logo.webp"
+          alt="" /></a>
+      <ul>
+        <li style="margin-top: 19px;"><a href="register.html">Register</a></li>
+        <li style="margin-top: 19px;"><a href="">Events</a></li>
+        <li style="margin-top: 19px;"><a href="">Speakers</a></li>
+        <li style="margin-top: 19px;"><a href="">Blog</a></li>
+      </ul>
+    </div>
+  </div>
 
   <main>
     <section class="hero header" id="hero-sec">
@@ -103,8 +121,26 @@
         class="learn-more-button">Learn
         more</a>
     </section>
-    <section>
-      <div></div>
+    <section class="side-events">
+      <h2>Side Events</h2>
+      <!-- <div class="side-events-container">
+        <div class="side-events-card">
+          <h1>National Events</h1>
+          <p>
+            Will be handled by the MC team of each entity to ensure maximum engagement and input of each entity in the
+            dreaming process, and also a deeper understanding of your internal and external realities. This event is to
+            be delegated to entities to take forward in order to include the most of their membership in the dreaming
+            process in order to both increase engagement with the dreaming process and making this dreaming process as
+            holistic and inclusive as it can be (including those that won't be able to make it to IC)
+          </p>
+        </div>
+        <div class="side-events-card">
+          <h1>Global Events</h1>
+          <p>These are interactive events and activities that will be delivered by the A2030 Dream Team and aimed at the
+            whole Global plenary to ensure maximum contribution of global membership of all layers to the dreaming
+            process! </p>
+        </div>
+      </div> -->
     </section>
     <section class="aura-section container">
       <div class="what-content container">
@@ -350,6 +386,7 @@
       video.play();
     }
   </script>
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>
