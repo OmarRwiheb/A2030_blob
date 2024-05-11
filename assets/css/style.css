@@ -1175,11 +1175,11 @@ body {
 }
 
 .why-mtd-card-container {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  max-width: 1000px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  gap: 1rem;
+  gap: .5rem;
 }
 
 .why-mtd-card-container .why-mtd-card {
@@ -1192,17 +1192,17 @@ body {
   padding: 16px;
   text-align: left;
   text-shadow: 1px 1px 0 var(--purple);
-  margin: 10px;
+  margin: 5px;
 }
 
 .why-mtd-card-container .why-mtd-card h1 {
-  font-size: 24px;
+  font-size: 18px;
   margin-bottom: 20px;
   font-family: "Montserrat";
 }
 
 .why-mtd-card-container .why-mtd-card p {
-  font-size: 16px;
+  font-size: 14px;
   font-family: "JosefinSans";
 }
 
