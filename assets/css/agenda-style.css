@@ -100,6 +100,7 @@ h2.agenda-title {
   margin-bottom: 24px;
   position: relative;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .schedule-cards__row:last-child .schedule-card {
@@ -138,7 +139,7 @@ h2.agenda-title {
   margin: 0;
   font-family: "JosefinSans";
   font-size: 18px;
-  color: var(--drak-blue);
+  color: var(--black);
 }
 .schedule-card__text .description {
   margin: 0;
