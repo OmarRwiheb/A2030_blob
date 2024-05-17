@@ -43,3 +43,16 @@ mobNav.addEventListener("click", () => {
     cover.style.transform = "translateY(120px)";
   else cover.style.transform = "translateY(1px)";
 });
+
+window.addEventListener('scroll', function() {
+  var myElement = document.getElementsByClassName('fixed-register-button')[0];
+  var scrollPosition = window.scrollY + window.innerHeight;
+            var pageHeight = document.documentElement.scrollHeight;
+            var triggerPosition = pageHeight * 0.97;
+
+            if (scrollPosition >= triggerPosition) {
+                myElement.style.display = 'none';
+            } else {
+                myElement.style.display = 'block';
+            }
+});
