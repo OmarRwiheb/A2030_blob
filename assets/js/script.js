@@ -48,7 +48,7 @@ window.addEventListener('scroll', function() {
   var myElement = document.getElementsByClassName('fixed-register-button')[0];
   var scrollPosition = window.scrollY + window.innerHeight;
             var pageHeight = document.documentElement.scrollHeight;
-            var triggerPosition = pageHeight * 0.97;
+            var triggerPosition = pageHeight * 0.99;
 
             if (scrollPosition >= triggerPosition) {
                 myElement.style.display = 'none';
