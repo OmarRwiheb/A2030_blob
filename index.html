@@ -473,7 +473,7 @@
   <script>
     AOS.init({ duration: 1600 });
   </script>
-  <script>
+<!--   <script>
     let line1 = document.getElementById("line-one");
     let line2 = document.getElementById("line-two");
 
@@ -484,7 +484,7 @@
       line1.style.transform = `translateX(-${1 * val}px)`;
       line2.style.transform = `translateX(${1 * val}px)`;
     });
-  </script>
+  </script> -->
   <script>
     $(window).scroll(function () {
       var scroll = $(window).scrollTop();
@@ -510,6 +510,25 @@
       video.play();
     }
   </script>
+    <script>
+      const blocker = document.querySelector(".blocker");
+      const popup = document.querySelector(".popup-container");
+      const close = document.querySelector(".close");
+
+      window.onload = function () {
+        setTimeout(function () {
+          popup.style.display = "block";
+        }, 100);
+      };
+
+      blocker.addEventListener("click", () => {
+        popup.style.display = "none";
+      });
+
+      close.addEventListener("click", () => {
+        popup.style.display = "none";
+      });
+    </script>
   <script src="assets/js/script.js"></script>
   <script src="game_white/game.js" type="module"></script>
 </body>
