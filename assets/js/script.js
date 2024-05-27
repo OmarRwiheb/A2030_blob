@@ -44,19 +44,19 @@ mobNav.addEventListener("click", () => {
   else cover.style.transform = "translateY(1px)";
 });
 
-window.addEventListener('scroll', function() {
-  var myElement = document.getElementsByClassName('fixed-register-button')[0];
-  var scrollPosition = window.scrollY + window.innerHeight;
-  var pageHeight = document.documentElement.scrollHeight;
-  var triggerPosition = pageHeight * 0.99;
+// window.addEventListener('scroll', function() {
+//   var myElement = document.getElementsByClassName('fixed-register-button')[0];
+//   var scrollPosition = window.scrollY + window.innerHeight;
+//   var pageHeight = document.documentElement.scrollHeight;
+//   var triggerPosition = pageHeight * 0.99;
 
-  if (window.innerWidth <= 981) {
-      if (scrollPosition >= triggerPosition) {
-          myElement.style.display = 'none';
-      } else {
-          myElement.style.display = 'block';
-      }
-  } else {
-      myElement.style.display = 'none'; // Ensuring it's visible for widths &gt; 981
-  }
-});
+//   if (window.innerWidth <= 981) {
+//       if (scrollPosition >= triggerPosition) {
+//           myElement.style.display = 'none';
+//       } else {
+//           myElement.style.display = 'block';
+//       }
+//   } else {
+//       myElement.style.display = 'none'; // Ensuring it's visible for widths &gt; 981
+//   }
+// });
