@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=VT323);
+
+/* Game Styles */
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  position: relative;
+}
+
+.blackScreen {
+  position: absolute;
+  width: 500px;
+  height: 100%;
+  top: 0;
+  /* background: black; */
+  /* opacity: .7; */
+  z-index: 0;
+  display: none;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 250px;
+  user-select: none;
+  touch-action: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  margin-bottom: 80px;
+}
+
+.submit-username-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 1;
+}
+
+.btn-game {
+  font-family: "VT323";
+  background: #7c7c7c;
+  border-bottom: 3px inset rgba(0, 0, 0, 0.5);
+  border-left: 3px inset rgba(0, 0, 0, 0.5);
+  border-right: 3px inset rgba(255, 255, 255, 0.5);
+  border-top: 3px inset rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  text-transform: uppercase;
+  width: auto;
+
+  &:focus,
+  &:hover {
+    background: #bcbcbc;
+  }
+}
+
+.btn-game.primary {
+  background: orangered;
+
+  &:focus,
+  &:hover {
+    background: black;
+  }
+}
+
+.input-game {
+  font-family: "VT323";
+  opacity: 0.95;
+}
+
+.player {
+  color: black;
+  font-family: "VT323";
+  font-size: 26px;
+}
+
+.scoreboard-container {
+  margin-top: 0;
+}
+
+.btn-start {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  font-size: 30px;
+  font-family: "poppins";
+}
+
+/* @media (max-width: 600px) {
+  .game-div {
+    margin-top: 25px;
+  }
+} */

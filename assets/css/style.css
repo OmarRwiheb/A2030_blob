@@ -592,7 +592,7 @@ video {
   );
   box-shadow: rgb(255 255 255 / 30%) 0px 0px 0px 0.5px inset;
   border-radius: 20px;
-  backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);  
 }
 
 .cards-content {
