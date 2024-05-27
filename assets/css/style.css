@@ -473,36 +473,36 @@ video {
 }
 @keyframes circular {
   0% {
-    transform: translate(0, -150px);
+    transform: translate(0, -100px);
   }
   25% {
-    transform: translate(150px, 0);
+    transform: translate(100px, 0);
   }
   50% {
-    transform: translate(0, 150px);
+    transform: translate(0, 100px);
   }
   75% {
-    transform: translate(-150px, 0);
+    transform: translate(-100px, 0);
   }
   100% {
-    transform: translate(0, -150px);
+    transform: translate(0, -100px);
   }
 }
 @keyframes circular2 {
   0% {
-    transform: translate(0, 150px);
+    transform: translate(0, 100px);
   }
   25% {
-    transform: translate(-150px, 0);
+    transform: translate(-100px, 0);
   }
   50% {
-    transform: translate(0, -150px);
+    transform: translate(0, -100px);
   }
   75% {
-    transform: translate(150px, 0);
+    transform: translate(100px, 0);
   }
   100% {
-    transform: translate(0, 150px);
+    transform: translate(0, 100px);
   }
 }
 
@@ -592,7 +592,7 @@ video {
   );
   box-shadow: rgb(255 255 255 / 30%) 0px 0px 0px 0.5px inset;
   border-radius: 20px;
-  backdrop-filter: blur(25px);  
+  backdrop-filter: blur(25px);
 }
 
 .cards-content {
@@ -1249,7 +1249,7 @@ body {
   aspect-ratio: 1;
   padding: 16px;
   text-align: left;
-  text-shadow: 1px 1px 0 var(--purple);
+  /* text-shadow: 1px 1px 0 var(--purple); */
   margin: 5px;
   text-align: center;
   display: flex;
@@ -1269,7 +1269,7 @@ body {
 }
 
 .fixed-register-button {
-  display: none;
+  /* display: none; */
   position: fixed;
   font-size: 25px;
   bottom: 3%;
@@ -1486,7 +1486,7 @@ header .container {
   top: 0;
   left: 0;
   height: 100%;
-  z-index: 1000000;
+  z-index: 9999;
 }
 
 .mobile-nav img {
@@ -1607,4 +1607,162 @@ ul {
   width: 90%;
   height: 138px;
   transition: 0.25s cubic-bezier(0.2, 0.49, 0.32, 0.99);
+}
+
+.popup-container {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contentBox {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background: url("../img/pc_pop_up.webp");
+  border-radius: 20px;
+  background-size: contain;
+}
+
+.contentBox a {
+  font-family: Lato;
+  text-decoration: none;
+  color: rgb(165 59 18);
+  background: rgb(254, 249, 198);
+  border: 4px solid rgb(254, 249, 198);
+  position: absolute;
+  width: 172px;
+  border-radius: 15px;
+  height: 50px;
+  text-align: center;
+  left: 20%;
+  transform: translateX(-50%);
+  top: 81%;
+  font-size: 27px;
+  font-weight: 900;
+  line-height: 1.55;
+}
+
+@media (max-width: 639px) {
+  .contentBox {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: url("../img/mobile_pop_ups2.webp");
+    border-radius: 20px;
+    transform: translate(-110%, -150%);
+    background-size: contain;
+  }
+  .contentBox a {
+    left: 50%;
+  }
+}
+
+.blocker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: " ";
+  background: rgb(0 0 0 / 62%);
+  width: 100%;
+  height: 100%;
+}
+
+.close {
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  width: 32px;
+  height: 32px;
+  opacity: 1;
+  z-index: 1;
+}
+.close:hover {
+  cursor: pointer;
+}
+.close:before,
+.close:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 33px;
+  width: 2px;
+  background-color: rgb(254, 249, 198);
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.team {
+  margin-top: 84px;
+}
+
+.team h1 {
+  font-family: "SmoothFantasy";
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  font-weight: 100;
+}
+
+.team h1::after {
+  content: "";
+  background: url(../img/blob.png);
+  background-size: contain;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: 206px;
+  top: -22px;
+  z-index: -2;
+}
+
+@media (max-width: 600px) {
+  .team h1 {
+    font-size: 35px;
+  }
+
+  .team h1::after {
+    width: 300px;
+    height: 300px;
+    left: -19px;
+    top: 74px;
+  }
+}
+
+.team .images {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 120px;
+  margin-top: 140px;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-image {
+  margin-bottom: 50px;
+}
+
+.team .images img {
+  border-radius: 40px;
+}
+
+.team .images p {
+  text-align: center;
+}
+
+#team-name {
+  font-family: "SmoothFantasy";
 }
