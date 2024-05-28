@@ -131,6 +131,7 @@ nav ul a {
   font-family: "JosefinSans";
   text-decoration: none;
   padding: 0 0.8rem;
+  padding-left: 0;
   color: white;
 }
 
