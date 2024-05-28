@@ -130,8 +130,7 @@ header nav ul {
 nav ul a {
   font-family: "JosefinSans";
   text-decoration: none;
-  padding: 0 0.8rem;
-  padding-left: 0;
+  padding: 0 0.8rem 0 0;
   color: white;
 }
 
