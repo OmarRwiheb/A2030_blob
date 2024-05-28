@@ -1269,7 +1269,7 @@ body {
 }
 
 .fixed-register-button {
-  /* display: none; */
+  display: none;
   position: fixed;
   font-size: 25px;
   bottom: 3%;
