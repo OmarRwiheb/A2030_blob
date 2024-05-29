@@ -1742,13 +1742,14 @@ ul {
   }
 }
 
+
 .team .images {
   display: flex;
   flex-wrap: wrap;
   column-gap: 120px;
   margin-top: 140px;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 
 .team-image {
@@ -1757,10 +1758,12 @@ ul {
 
 .team .images img {
   border-radius: 40px;
+  margin-bottom: 15px;
 }
 
 .team .images p {
   text-align: center;
+  width: 300px;
 }
 
 #team-name {
