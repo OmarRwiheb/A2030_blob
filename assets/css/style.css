@@ -189,7 +189,7 @@ nav ul li:nth-child(1) a:hover {
   font-weight: 300;
   font-size: 0.83rem;
   color: #fff;
-  padding: 2px 11px 0 0;
+  padding: 2px 11px 0 11px;
 }
 .user-list-header {
   display: flex;
@@ -1768,4 +1768,11 @@ ul {
 
 #team-name {
   font-family: "SmoothFantasy";
+}
+.team-image a {
+  transition: 0.8s;
+}
+
+.team-image a:hover {
+  filter: grayscale(0.4);
 }
