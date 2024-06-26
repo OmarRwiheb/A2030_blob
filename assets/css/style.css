@@ -1857,3 +1857,38 @@ td.rank {
   text-decoration: none;
   font-family: "JosefinSans";
 }
+
+/* merch  */
+.merch-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  row-gap: 40px;
+  width: 100%;
+  margin: auto;
+}
+
+.merch-item{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: start;
+  align-items: center;
+}
+
+.merch-item img{
+  width: 300px;
+  border-radius: 25px;
+}
+.merch-item p{
+  font-family: "JosefinSans";
+  color: var(--blue);
+  text-align: center;
+  font-size: 24px;
+}
+
+.merchandise h2{
+  margin-top: 70px;
+  text-align: center;
+  color: white;
+}
