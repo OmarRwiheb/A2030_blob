@@ -1894,7 +1894,6 @@ td.rank {
   color: white;
 }
 
-// Countdown
 .countdown-container,
 #headline,
 ul.countdown-ul,
@@ -1919,6 +1918,7 @@ ul.countdown-ul li span,
 
 #headline {
   margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: normal;
   letter-spacing: 0.125rem;
   text-transform: uppercase;
@@ -1954,10 +1954,10 @@ ul.countdown-ul li span {
 
   ul.countdown-ul li {
     font-size: calc(1.125rem * var(--smaller));
-    padding: calc(.2rem * var(--smaller));
+    padding: calc(.1rem * var(--smaller));
   }
 
   ul.countdown-ul li span {
-    font-size: calc(3.375rem * var(--smaller));
+    font-size: calc(2rem * var(--smaller));
   }
 }
