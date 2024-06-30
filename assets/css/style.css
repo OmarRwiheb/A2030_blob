@@ -28,6 +28,7 @@
   --drak-blue: #2a44ff;
   --black: #2e2c30;
   --white: #ffff;
+  --smaller: .75;
 }
 
 *,
@@ -1891,4 +1892,72 @@ td.rank {
   margin-top: 70px;
   text-align: center;
   color: white;
+}
+
+// Countdown
+.countdown-container,
+#headline,
+ul.countdown-ul,
+ul.countdown-ul li,
+ul.countdown-ul li span,
+.emoji {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.countdown-container {
+  padding: 30px;
+  border-radius: 20px;
+  background-color: var(--blue);
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+#headline {
+  margin-top: 30px;
+  font-weight: normal;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+
+ul.countdown-ul li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+ul.countdown-ul li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji span {
+  font-size: 4rem;
+  padding: 0 0.5rem;
+}
+
+@media all and (max-width: 981px) {
+  #headline {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+
+  ul.countdown-ul li {
+    font-size: calc(1.125rem * var(--smaller));
+    padding: calc(.2rem * var(--smaller));
+  }
+
+  ul.countdown-ul li span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
 }

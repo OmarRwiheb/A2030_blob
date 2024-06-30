@@ -1,43 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/img/favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/img/favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/img/favicon_io/favicon-16x16.png"
-    />
-    <link rel="manifest" href="assets/img/favicon_io/site.webmanifest" />
 
-    <title>A2030</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/side-events-style.css" />
-    <link rel="stylesheet" href="game_white/style.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon_io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon_io/favicon-16x16.png" />
+  <link rel="manifest" href="assets/img/favicon_io/site.webmanifest" />
 
-  <body>
-<!--     <div class="popup-container">
+  <title>A2030</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/side-events-style.css" />
+  <link rel="stylesheet" href="game_white/style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!--     <div class="popup-container">
       <div class="blocker"></div>
       <div class="popup">
         <div id="close-btn" class="close"></div>
@@ -51,70 +34,92 @@
         </a>
       </div>
     </div> -->
-    <a class="fixed-register-button" href="register.html">Register</a>
-<header>
-      <div class="container">
-        <nav>
-          <a href="/"><img src="assets/img/logo.webp" alt="" /></a>
-          <ul>
-            <li><a href="register.html" class="main-nav-first">Register</a></li>
-            <li><a href="/">Home</a></li>
-            <li><a href="team.html">Meet the Team</a></li>
-            <li><a href="https://www.hub.aiesec.org/a2025">A2025 MTD</a></li>
-            <li>
-              <div class="user-list">
-                <div class="user-list-header">
-                  <p>Events</p>
-                  <p><i class="fa-solid fa-caret-down"></i></p>
-                </div>
-                <ul id="dropdown-profile" style="display: none">
-                  <li>
-                    <a href="FromCrisisToOpportunity.html"
-                      >From Crisis to Opportunity</a
-                    >
-                  </li>
-                  <li>
-                    <a href="LeadingWithPurpose.html">Leading with Purpose</a>
-                  </li>
-                  <li><a href="GenZLeaders.html">Gen Z Leaders</a></li>
-                </ul>
-              </div>
-            </li>
+  <div class="popup-container">
+    <div class="blocker"></div>
+    <div class="popup" style="width: 70dvw;">
+      <div id="close-btn" class="close"></div>
+      <div class="countdown-container">
+        <h1 id="headline">AIESEC 2030 DREAMING COUNTDOWN</h1>
+        <div id="countdown">
+          <ul class="countdown-ul">
+            <li><span id="days"></span>days</li>
+            <li><span id="hours"></span>Hours</li>
+            <li><span id="minutes"></span>Minutes</li>
+            <li><span id="seconds"></span>Seconds</li>
           </ul>
-          <div class="hamburger">
-            <button>
-              <div class="bar"></div>
-            </button>
-          </div>
-        </nav>
+        </div>
+        <div id="content" class="emoji">
+          <span>🥳</span>
+          <span>🎉</span>
+          <span>🚀</span>
+        </div>
       </div>
-    </header>
-    <div class="mobile-nav" style="display: none">
-      <div class="nav-blocker"></div>
-      <div class="nav-content">
-        <a style="display: flex; justify-content: left" href="/"
-          ><img class="logo" src="assets/img/logo.webp" alt=""
-        /></a>
+      <!-- <a href="register.html" target="_blank">
+        <div class="contentBox" style="transform: translate(0, 0)">
+          <div id="close-btn" class="close"></div>
+        </div>
+      </a> -->
+    </div>
+  </div>
+  <a class="fixed-register-button" href="register.html">Register</a>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="/"><img src="assets/img/logo.webp" alt="" /></a>
         <ul>
-          <li style="margin-top: 19px"><a href="register.html">Register</a></li>
-          <li style="margin-top: 19px"><a href="/">Home</a></li>
-          <li style="margin-top: 19px">
-            <a href="team.html">Meet the Team</a>
-          </li>
-          <li style="margin-top: 19px">
-            <a href="https://www.hub.aiesec.org/a2025">A2025 MTD</a>
-          </li>
-
-          <li style="margin-top: 19px">
-            <div class="programs-list">
-              <div id="dropdown-head-mob" class="dropdown-head" href="">
+          <li><a href="register.html" class="main-nav-first">Register</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="team.html">Meet the Team</a></li>
+          <li><a href="https://www.hub.aiesec.org/a2025">A2025 MTD</a></li>
+          <li>
+            <div class="user-list">
+              <div class="user-list-header">
                 <p>Events</p>
                 <p><i class="fa-solid fa-caret-down"></i></p>
               </div>
-              <div class="dropdown">
-                <ul
-                  id="mob-dropdown"
-                  style="
+              <ul id="dropdown-profile" style="display: none">
+                <li>
+                  <a href="FromCrisisToOpportunity.html">From Crisis to Opportunity</a>
+                </li>
+                <li>
+                  <a href="LeadingWithPurpose.html">Leading with Purpose</a>
+                </li>
+                <li><a href="GenZLeaders.html">Gen Z Leaders</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <button>
+            <div class="bar"></div>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="mobile-nav" style="display: none">
+    <div class="nav-blocker"></div>
+    <div class="nav-content">
+      <a style="display: flex; justify-content: left" href="/"><img class="logo" src="assets/img/logo.webp"
+          alt="" /></a>
+      <ul>
+        <li style="margin-top: 19px"><a href="register.html">Register</a></li>
+        <li style="margin-top: 19px"><a href="/">Home</a></li>
+        <li style="margin-top: 19px">
+          <a href="team.html">Meet the Team</a>
+        </li>
+        <li style="margin-top: 19px">
+          <a href="https://www.hub.aiesec.org/a2025">A2025 MTD</a>
+        </li>
+
+        <li style="margin-top: 19px">
+          <div class="programs-list">
+            <div id="dropdown-head-mob" class="dropdown-head" href="">
+              <p>Events</p>
+              <p><i class="fa-solid fa-caret-down"></i></p>
+            </div>
+            <div class="dropdown">
+              <ul id="mob-dropdown" style="
                     color: #fff;
                     background: transparent;
                     padding: 14px;
@@ -124,29 +129,22 @@
                     width: 100%;
                     display: block;
                     padding-left: 30px;
-                  "
-                  class="dropdown-list-mob"
-                >
-                  <li>
-                    <a href="FromCrisisToOpportunity.html"
-                      >From Crisis to Opportunity</a
-                    >
-                  </li>
-                  <li>
-                    <a href="LeadingWithPurpose.html">Leading with Purpose</a>
-                  </li>
-                  <li><a href="GenZLeaders.html">Gen Z Leaders</a></li>
-                </ul>
-                <div
-                  class="list-cover"
-                  style="transform: translateY(1px)"
-                ></div>
-              </div>
+                  " class="dropdown-list-mob">
+                <li>
+                  <a href="FromCrisisToOpportunity.html">From Crisis to Opportunity</a>
+                </li>
+                <li>
+                  <a href="LeadingWithPurpose.html">Leading with Purpose</a>
+                </li>
+                <li><a href="GenZLeaders.html">Gen Z Leaders</a></li>
+              </ul>
+              <div class="list-cover" style="transform: translateY(1px)"></div>
             </div>
-          </li>
-        </ul>
-      </div>
+          </div>
+        </li>
+      </ul>
     </div>
+  </div>
   <main>
     <section class="hero header" id="hero-sec">
       <div class="hero-container">
@@ -356,38 +354,38 @@
     </section>
 
     <section class="ranking container">
-        <div class="wrapper">
-          <h2>Top contributing entities</h2>
+      <div class="wrapper">
+        <h2>Top contributing entities</h2>
 
-          <table>
-            <thead>
-              <tr>
-                <th>Rank</th>
-                <th>Entity</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="rank">🥇</td>
-                <td class="team">Tunisia</td>
-              </tr>
-              <tr>
-                <td class="rank">🥈</td>
-                <td class="team">India</td>
-              </tr>
-              <tr>
-                <td class="rank">🥉</td>
-                <td class="team">Indonesia</td>
-              </tr>
-              <tr>
-                <td class="rank">4th</td>
-                <td class="team">Nigeria</td>
-              </tr>
-              <tr>
-                <td class="rank">5th</td>
-                <td class="team">Ukraine</td>
-              </tr>
-              <!-- <tr>
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Entity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="rank">🥇</td>
+              <td class="team">Tunisia</td>
+            </tr>
+            <tr>
+              <td class="rank">🥈</td>
+              <td class="team">India</td>
+            </tr>
+            <tr>
+              <td class="rank">🥉</td>
+              <td class="team">Indonesia</td>
+            </tr>
+            <tr>
+              <td class="rank">4th</td>
+              <td class="team">Nigeria</td>
+            </tr>
+            <tr>
+              <td class="rank">5th</td>
+              <td class="team">Ukraine</td>
+            </tr>
+            <!-- <tr>
                 <td class="rank">6th</td>
                 <td class="team">Algeria</td>
               </tr>
@@ -407,17 +405,17 @@
                 <td class="rank">10th</td>
                 <td class="team">Morocco</td>
               </tr> -->
-            </tbody>
-          </table>
+          </tbody>
+        </table>
+      </div>
+      <div class="blob-container">
+        <div class="blobs" style="left: 50%">
+          <div class="blob a"></div>
+          <div class="blob b"></div>
+          <div class="blob c"></div>
         </div>
-        <div class="blob-container">
-          <div class="blobs" style="left: 50%">
-            <div class="blob a"></div>
-            <div class="blob b"></div>
-            <div class="blob c"></div>
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
     <section class="events container">
       <div class="events-container">
@@ -540,7 +538,7 @@
   <script>
     AOS.init({ duration: 1600 });
   </script>
-<!--   <script>
+  <!--   <script>
     let line1 = document.getElementById("line-one");
     let line2 = document.getElementById("line-two");
 
@@ -577,25 +575,25 @@
       video.play();
     }
   </script>
-    <script>
-      const blocker = document.querySelector(".blocker");
-      const popup = document.querySelector(".popup-container");
-      const close = document.querySelector(".close");
+  <script>
+    const blocker = document.querySelector(".blocker");
+    const popup = document.querySelector(".popup-container");
+    const close = document.querySelector(".close");
 
-      window.onload = function () {
-        setTimeout(function () {
-          popup.style.display = "block";
-        }, 100);
-      };
+    window.onload = function () {
+      setTimeout(function () {
+        popup.style.display = "block";
+      }, 100);
+    };
 
-      blocker.addEventListener("click", () => {
-        popup.style.display = "none";
-      });
+    blocker.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
 
-      close.addEventListener("click", () => {
-        popup.style.display = "none";
-      });
-    </script>
+    close.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+  </script>
   <script src="assets/js/script.js"></script>
   <script src="game_white/game.js" type="module"></script>
 </body>
