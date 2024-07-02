@@ -1960,4 +1960,8 @@ ul.countdown-ul li span {
   ul.countdown-ul li span {
     font-size: calc(2rem * var(--smaller));
   }
+
+  .countdown-container {
+    padding: 30px 10px;
+  }
 }
