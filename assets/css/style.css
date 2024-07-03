@@ -1908,7 +1908,7 @@ ul.countdown-ul li span,
 .countdown-container {
   padding: 30px;
   border-radius: 20px;
-  background-color: var(--blue);
+  background-image: linear-gradient(-206deg, #835EFF 0%, #FF008D 100%);
   color: white;
   margin: 0 auto;
   text-align: center;
