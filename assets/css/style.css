@@ -1916,6 +1916,17 @@ ul.countdown-ul li span,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
+.squad-reveal-container {
+    padding: 30px;
+  border-radius: 20px;
+  background-image: linear-gradient(-206deg, #835EFF 0%, #FF008D 100%);
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
 #headline {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -1961,7 +1972,41 @@ ul.countdown-ul li span {
     font-size: calc(2rem * var(--smaller));
   }
 
-  .countdown-container {
+  .countdown-container, .squad-reveal-container {
     padding: 30px 10px;
   }
+}
+
+.squads-headline {
+  padding: 0px 40px;
+  font-family: 'JosefinSans';
+  font-size: 65px;
+  color: white;
+  word-wrap: break-word;
+}
+
+.squads-input {
+  padding: 18px;
+  font-size: 20px;
+  border: 0;
+  border-radius: 25px;
+  margin: 10px 0 10px 0;
+  text-align: center;
+  width: 90%
+}
+
+.reveal-btn {
+  margin-top: 20px;
+  border: none;
+  font-size: 20px;
+  padding: 15px 20px;
+  border-radius: 25px;
+  transition: 0.8s;
+  background: linear-gradient(222deg, #037ef3, #7552cc, #2a44ff, #7126f1);
+  -webkit-animation: AnimationName 5s ease infinite;
+  -moz-animation: AnimationName 205s ease infinite;
+  animation: AnimationName 5s ease infinite;
+  color: white;
+  font-family: "JosefinSans";
+  cursor: pointer;
 }

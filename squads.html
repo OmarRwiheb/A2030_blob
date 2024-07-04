@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="assets/img/favicon_io/site.webmanifest" />
+    <title>A2030 - Store</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <a class="fixed-register-button" href="register.html">Register</a>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/"><img src="assets/img/logo.webp" alt="" /></a>
+                <ul>
+                    <li><a href="register.html" class="main-nav-first">Register</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="team.html">Meet the Team</a></li>
+                    <li><a href="https://www.hub.aiesec.org/a2025">A2025 MTD</a></li>
+                    <li>
+                        <div class="user-list">
+                            <div class="user-list-header">
+                                <p>Events</p>
+                                <p><i class="fa-solid fa-caret-down"></i></p>
+                            </div>
+                            <ul id="dropdown-profile" style="display: none">
+                                <li>
+                                    <a href="FromCrisisToOpportunity.html">From Crisis to Opportunity</a>
+                                </li>
+                                <li>
+                                    <a href="LeadingWithPurpose.html">Leading with Purpose</a>
+                                </li>
+                                <li><a href="GenZLeaders.html">Gen Z Leaders</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <button>
+                        <div class="bar"></div>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="mobile-nav" style="display: none">
+        <div class="nav-blocker"></div>
+        <div class="nav-content">
+            <a style="display: flex; justify-content: left" href="/"><img class="logo" src="assets/img/logo.webp"
+                    alt="" /></a>
+            <ul>
+                <li style="margin-top: 19px"><a href="register.html">Register</a></li>
+                <li style="margin-top: 19px"><a href="/">Home</a></li>
+                <li style="margin-top: 19px">
+                    <a href="team.html">Meet the Team</a>
+                </li>
+                <li style="margin-top: 19px">
+                    <a href="https://www.hub.aiesec.org/a2025">A2025 MTD</a>
+                </li>
+
+                <li style="margin-top: 19px">
+                    <div class="programs-list">
+                        <div id="dropdown-head-mob" class="dropdown-head" href="">
+                            <p>Events</p>
+                            <p><i class="fa-solid fa-caret-down"></i></p>
+                        </div>
+                        <div class="dropdown">
+                            <ul id="mob-dropdown" style="
+                    color: #fff;
+                    background: transparent;
+                    padding: 14px;
+                    border-bottom-left-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                    position: absolute;
+                    width: 100%;
+                    display: block;
+                    padding-left: 30px;
+                  " class="dropdown-list-mob">
+                                <li>
+                                    <a href="FromCrisisToOpportunity.html">From Crisis to Opportunity</a>
+                                </li>
+                                <li>
+                                    <a href="LeadingWithPurpose.html">Leading with Purpose</a>
+                                </li>
+                                <li><a href="GenZLeaders.html">Gen Z Leaders</a></li>
+                            </ul>
+                            <div class="list-cover" style="transform: translateY(1px)"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <div class="popup-container">
+            <div class="blocker"></div>
+            <div class="popup" style="min-width: 25dvw;">
+                <div id="close-btn" class="close"></div>
+                <div class="squad-reveal-container">
+                    <span class="squads-headline"></span>
+                </div>
+            </div>
+        </div>
+        <section class="event-hero">
+            <picture>
+                <source media="(max-width: 767px)" srcset="assets/img/events3_mobile.webp" />
+                <source media="(min-width: 787px)" srcset="assets/img/events3.webp" />
+                <img src="assets/img/events3.webp" alt="" width="100%" />
+            </picture>
+        </section>
+        <section style="text-align: center;">
+            <h2>Squads</h2>
+            <p>Enter your AIESEC email below to discover your squad ✨</p>
+
+        </section>
+        <section style="display: flex; justify-content: center;">
+            <div style="position: relative;">
+                <img src="assets/img/video_bgg.webp" height="800px" />
+                <div
+                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);text-align: center;">
+                    <h1 class="squads-headline">AIESEC Email</h1>
+                    <input type="email" class="squads-input" placeholder="example@aiesec.net">
+                    <button class="reveal-btn">Reveal ✨</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer style="margin-bottom: 25px;">
+        <p style="color: white">
+            Made with 🤍, Powered by AIESEC,<br />
+            Developed by
+            <a class="omar" href="https://www.linkedin.com/in/omar-rwiheb-698a761b9/">Omar Rwiheb</a>
+            and
+            <a class="omar" href="https://www.linkedin.com/in/limam-ahmed/">Ahmed Limam</a>
+        </p>
+    </footer>
+    <script>const blocker = document.querySelector(".blocker");
+        const popup = document.querySelector(".popup-container");
+        const close = document.querySelector(".close");
+        const revealBtn = document.querySelector(".reveal-btn");
+        const squadName = document.querySelector(".squads-headline");
+        const emailInput = document.querySelector(".squads-input");
+
+        squads = {
+            "ahmed.limam2@aiesec.net": "Squad 1",
+        };
+
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+
+        revealBtn.addEventListener('click', () => {
+            const email = emailInput.value.trim().toLowerCase();
+            if (email !== "" && validateEmail(email)) {
+                if (email in squads) {
+                    squadName.innerHTML = squads[email];
+                    popup.style.display = "block";
+                }
+            }
+        });
+
+        blocker.addEventListener("click", () => {
+            popup.style.display = "none";
+        });
+
+        close.addEventListener("click", () => {
+            popup.style.display = "none";
+        });</script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
