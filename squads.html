@@ -103,6 +103,18 @@
     </div>
 
     <main>
+        <div class="error-popup-container">
+            <div class="blocker"></div>
+            <div class="error-popup" style="min-width: 40dvw;">
+                <div id="close-btn" class="close"></div>
+                <div class="squad-reveal-container">
+                    <div class="popup-content" style=" padding: 30px 15px;">
+                        <span>Please make sure that your email is correct and
+                            that you have registered.</span><br>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="popup-container">
             <div class="blocker"></div>
             <div class="popup" style="min-width: 25dvw;">
@@ -151,7 +163,7 @@
         const formSquad = document.querySelector(".form-squad");
         const squadEmails = document.querySelector(".squads-emails");
         const emailInput = document.querySelector(".squads-input");
-        const squadLink = document.querySelector(".squad-link");
+        const errorPopup = document.querySelector(".error-popup-container");
 
         squads = [
             { "emails": ["ahmed.limam2@aiesec.net", "omarrwiheb@aiesec.net", "someonelse@aiesec.net"], "link": "//telegram.com" },
@@ -180,16 +192,22 @@
                     squadLink.href = link;
                     squadEmails.innerHTML = foundEmails.join(', ');
                     popup.style.display = "block";
+                } else {
+                    errorPopup.style.display = "block";
                 }
+            } else {
+                errorPopup.style.display = "block";
             }
         });
 
         blocker.addEventListener("click", () => {
             popup.style.display = "none";
+            errorPopup.style.display = "none";
         });
 
         close.addEventListener("click", () => {
             popup.style.display = "none";
+            errorPopup.style.display = "none";
         });</script>
     <script src="assets/js/script.js"></script>
 </body>
