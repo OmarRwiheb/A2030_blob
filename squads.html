@@ -108,33 +108,32 @@
             <div class="popup" style="min-width: 25dvw;">
                 <div id="close-btn" class="close"></div>
                 <div class="squad-reveal-container">
-                    <span class="squads-headline"></span>
+                    <div class="popup-content" style=" padding: 30px 15px;">
+                        <p style="font-size: 30px; font-weight: 800;">This is your squad! 🤩</p><br>
+                        <p class="squads-emails"></p><br>
+                        <a href="#" class="squad-link"
+                            style="color: white; font-size: 20px; font-weight: 800; text-decoration: none;cursor: pointer;">Join
+                            Telegram Group 💫</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <section class="event-hero">
-            <picture>
-                <source media="(max-width: 767px)" srcset="assets/img/events3_mobile.webp" />
-                <source media="(min-width: 787px)" srcset="assets/img/events3.webp" />
-                <img src="assets/img/events3.webp" alt="" width="100%" />
-            </picture>
-        </section>
-        <section style="text-align: center; padding: 10px;">
+        <section style="text-align: center; padding-left: 10px;padding-right: 10px; padding-top: 120px;">
             <h2>Squads</h2>
             <p>Enter your AIESEC email below to discover your squad ✨</p>
 
         </section>
-        <section style="display: flex; justify-content: center;">
+        <form class="form-squad" style="display: flex; justify-content: center;" onsubmit="" action="">
             <div style="position: relative;">
                 <img src="assets/img/video_bgg.webp" height="800px" style="object-fit: cover; width: 100dvw;" />
                 <div
-                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);text-align: center;">
+                    style="min-width: 40dvw; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);text-align: center;">
                     <h1 class="squads-headline">Your Email</h1>
                     <input type="email" class="squads-input" placeholder="example@aiesec.net">
-                    <button class="reveal-btn">Reveal ✨</button>
+                    <button class="reveal-btn" type="submit">Reveal ✨</button>
                 </div>
             </div>
-        </section>
+        </form>
     </main>
     <footer style="margin-bottom: 25px;">
         <p style="color: white">
@@ -149,23 +148,37 @@
         const popup = document.querySelector(".popup-container");
         const close = document.querySelector(".close");
         const revealBtn = document.querySelector(".reveal-btn");
-        const squadName = document.querySelector(".squads-headline");
+        const formSquad = document.querySelector(".form-squad");
+        const squadEmails = document.querySelector(".squads-emails");
         const emailInput = document.querySelector(".squads-input");
+        const squadLink = document.querySelector(".squad-link");
 
-        squads = {
-            "ahmed.limam2@aiesec.net": "Squad 1",
-        };
+        squads = [
+            { "emails": ["ahmed.limam2@aiesec.net", "omarrwiheb@aiesec.net", "someonelse@aiesec.net"], "link": "//telegram.com" },
+            { "emails": ["hehe@gmail.com", "wow@aiesec.net"], "link": "#" }
+        ];
 
         function validateEmail(email) {
             const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             return re.test(email);
         }
 
-        revealBtn.addEventListener('click', () => {
+        formSquad.addEventListener('submit', (event) => {
+            event.preventDefault();
             const email = emailInput.value.trim().toLowerCase();
             if (email !== "" && validateEmail(email)) {
-                if (email in squads) {
-                    squadName.innerHTML = squads[email];
+                let foundEmails = null;
+                let link = null;
+                for (let squad of squads) {
+                    if (squad.emails.includes(email)) {
+                        foundEmails = squad.emails.filter(e => e !== email);
+                        link = squad.link;
+                        break;
+                    }
+                }
+                if (foundEmails) {
+                    squadLink.href = link;
+                    squadEmails.innerHTML = foundEmails.join(', ');
                     popup.style.display = "block";
                 }
             }
