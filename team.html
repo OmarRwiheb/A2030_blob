@@ -1,108 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/img/favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/img/favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/img/favicon_io/favicon-16x16.png"
-    />
-    <link rel="manifest" href="assets/img/favicon_io/site.webmanifest" />
-    <title>A2030 - Registration</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
 
-  <body>
-    <a class="fixed-register-button" href="register.html">Register</a>
-    <header style=" position: relative;">
-      <div class="container">
-        <nav>
-          <a href="/"><img src="assets/img/logo.webp" alt="" /></a>
-          <ul>
-            <li><a href="register.html" class="main-nav-first">Register</a></li>
-            <li><a href="/">Home</a></li>
-            <li><a href="team.html">Meet the Team</a></li>
-            <li>
-              <a href="https://www.hub.aiesec.org/a2025" target="_blank"
-                >A2025 MTD</a
-              >
-            </li>
-            <li>
-              <div class="user-list">
-                <div class="user-list-header">
-                  <p>Events</p>
-                  <p><i class="fa-solid fa-caret-down"></i></p>
-                </div>
-                <ul id="dropdown-profile" style="display: none">
-                  <li>
-                    <a href="FromCrisisToOpportunity.html"
-                      >From Crisis to Opportunity</a
-                    >
-                  </li>
-                  <li>
-                    <a href="LeadingWithPurpose.html">Leading with Purpose</a>
-                  </li>
-                  <li><a href="GenZLeaders.html">Gen Z Leaders</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-          <div class="hamburger">
-            <button>
-              <div class="bar"></div>
-            </button>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <div class="mobile-nav" style="display: none">
-      <div class="nav-blocker"></div>
-      <div class="nav-content">
-        <a style="display: flex; justify-content: left" href="/"
-          ><img class="logo" src="assets/img/logo.webp" alt=""
-        /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon_io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon_io/favicon-16x16.png" />
+  <link rel="manifest" href="assets/img/favicon_io/site.webmanifest" />
+  <title>A2030 - Registration</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- <a class="fixed-register-button" href="register.html">Register</a> -->
+  <header style=" position: relative;">
+    <div class="container">
+      <nav>
+        <a href="/"><img src="assets/img/logo.webp" alt="" /></a>
         <ul>
-          <li style="margin-top: 19px"><a href="register.html">Register</a></li>
-          <li style="margin-top: 19px"><a href="/">Home</a></li>
-          <li style="margin-top: 19px">
-            <a href="team.html">Meet the Team</a>
+          <!-- <li><a href="register.html" class="main-nav-first">Register</a></li> -->
+          <li><a href="/">Home</a></li>
+          <li><a href="team.html">Meet the Team</a></li>
+          <li>
+            <a href="https://www.hub.aiesec.org/a2025" target="_blank">A2025 MTD</a>
           </li>
-          <li style="margin-top: 19px">
-            <a href="https://www.hub.aiesec.org/a2025" target="_blank"
-              >A2025 MTD</a
-            >
-          </li>
-          <li style="margin-top: 19px">
-            <div class="programs-list">
-              <div id="dropdown-head-mob" class="dropdown-head" href="">
+          <li>
+            <div class="user-list">
+              <div class="user-list-header">
                 <p>Events</p>
                 <p><i class="fa-solid fa-caret-down"></i></p>
               </div>
-              <div class="dropdown">
-                <ul
-                  id="mob-dropdown"
-                  style="
+              <ul id="dropdown-profile" style="display: none">
+                <li>
+                  <a href="FromCrisisToOpportunity.html">From Crisis to Opportunity</a>
+                </li>
+                <li>
+                  <a href="LeadingWithPurpose.html">Leading with Purpose</a>
+                </li>
+                <li><a href="GenZLeaders.html">Gen Z Leaders</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <button>
+            <div class="bar"></div>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="mobile-nav" style="display: none">
+    <div class="nav-blocker"></div>
+    <div class="nav-content">
+      <a style="display: flex; justify-content: left" href="/"><img class="logo" src="assets/img/logo.webp"
+          alt="" /></a>
+      <ul>
+        <!-- <li style="margin-top: 19px"><a href="register.html">Register</a></li> -->
+        <li style="margin-top: 19px"><a href="/">Home</a></li>
+        <li style="margin-top: 19px">
+          <a href="team.html">Meet the Team</a>
+        </li>
+        <li style="margin-top: 19px">
+          <a href="https://www.hub.aiesec.org/a2025" target="_blank">A2025 MTD</a>
+        </li>
+        <li style="margin-top: 19px">
+          <div class="programs-list">
+            <div id="dropdown-head-mob" class="dropdown-head" href="">
+              <p>Events</p>
+              <p><i class="fa-solid fa-caret-down"></i></p>
+            </div>
+            <div class="dropdown">
+              <ul id="mob-dropdown" style="
                     color: #fff;
                     background: transparent;
                     padding: 14px;
@@ -112,140 +86,108 @@
                     width: 100%;
                     display: block;
                     padding-left: 30px;
-                  "
-                  class="dropdown-list-mob"
-                >
-                  <li>
-                    <a href="FromCrisisToOpportunity.html"
-                      >From Crisis to Opportunity</a
-                    >
-                  </li>
-                  <li>
-                    <a href="LeadingWithPurpose.html">Leading with Purpose</a>
-                  </li>
-                  <li><a href="GenZLeaders.html">Gen Z Leaders</a></li>
-                </ul>
-                <div
-                  class="list-cover"
-                  style="transform: translateY(1px)"
-                ></div>
-              </div>
+                  " class="dropdown-list-mob">
+                <li>
+                  <a href="FromCrisisToOpportunity.html">From Crisis to Opportunity</a>
+                </li>
+                <li>
+                  <a href="LeadingWithPurpose.html">Leading with Purpose</a>
+                </li>
+                <li><a href="GenZLeaders.html">Gen Z Leaders</a></li>
+              </ul>
+              <div class="list-cover" style="transform: translateY(1px)"></div>
             </div>
-          </li>
-        </ul>
-      </div>
+          </div>
+        </li>
+      </ul>
     </div>
+  </div>
 
-   <main>
-      <section class="team container">
-        <h1>Meet the dream team</h1>
-        <div class="images">
-          <div class="team-image">
-            <a href="https://www.linkedin.com/in/henry-tabansi/" target="_blank"
-              ><img src="assets/img/team/henry.webp" alt=""
-            /></a>
-            <p id="team-name">Henry Tabansi</p>
-            <p>
-              AIESEC International VP, People and Strategy <br />
-              (Global Project Manager)
-            </p>
-          </div>
-          <div class="team-image">
-            <a href="https://www.linkedin.com/in/aleyna-sayin" target="_blank"
-              ><img src="assets/img/team/aley.webp" alt=""
-            /></a>
-            <p id="team-name">Aleyna Sayin</p>
-            <p>Project Lead</p>
-          </div>
-          <div class="team-image">
-            <a
-              href="https://www.linkedin.com/in/omar-rwiheb-698a761b9/"
-              target="_blank"
-              ><img src="assets/img/team/soory.webp" alt=""
-            /></a>
-            <p id="team-name">Omar Rwiheb</p>
-            <p>IT & Tech Coordinator</p>
-          </div>
-          <div class="team-image">
-            <a href="https://www.linkedin.com/in/limam-ahmed/" target="_blank"
-              ><img src="assets/img/team/limam.webp" alt=""
-            /></a>
-            <p id="team-name">Ahmed Limam</p>
-            <p>IT & Tech Associate</p>
-          </div>
-          <div class="team-image">
-            <a href="www.linkedin.com/in/jeffrey-oba" target="_blank"
-              ><img src="assets/img/team/jeff.webp" alt=""
-            /></a>
-            <p id="team-name">Jeffrey Oba</p>
-            <p>Marketing & Promotions Coordinator</p>
-          </div>
-          <div class="team-image">
-            <a href="www.linkedin.com/in/rabia-hanif-998109210/" target="_blank"
-              ><img src="assets/img/team/rabia.webp" alt=""
-            /></a>
-            <p id="team-name">Rabia Hanif</p>
-            <p>Marketing & Promotions Associate</p>
-          </div>
-          <div class="team-image">
-            <a
-              href="https://www.linkedin.com/in/youssef-alaa-3638b319b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-              target="_blank"
-              ><img src="assets/img/team/joe.webp" alt=""
-            /></a>
-            <p id="team-name">Youssef Alaa</p>
-            <p>Marketing & Promotions Associate</p>
-          </div>
-          <div class="team-image">
-            <a href="https://www.linkedin.com/in/leysanjune/" target="_blank"
-              ><img src="assets/img/team/leysan.webp" alt=""
-            /></a>
-            <p id="team-name">Leysan Sharafutdinova</p>
-            <p>Programme Coordinator</p>
-          </div>
-          <div class="team-image">
-            <a href="www.linkedin.com/in/ahmed-hossam-983ab8233" target="_blank"
-              ><img src="assets/img/team/hossam.webp" alt=""
-            /></a>
-            <p id="team-name">Ahmed Hossam</p>
-            <p>Programme Associate</p>
-          </div>
-          <div class="team-image">
-            <a
-              href="https://www.linkedin.com/in/sudara-sansali-de-silva?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-              target="_blank"
-              ><img src="assets/img/team/sansali.webp" alt=""
-            /></a>
-            <p id="team-name">Sudara Sansali</p>
-            <p>Programme Associate</p>
-          </div>
-          <div class="team-image">
-            <a
-              href="https://www.linkedin.com/in/itsmeomaribrahim/"
-              target="_blank"
-              ><img src="assets/img/team/omar.webp" alt=""
-            /></a>
-            <p id="team-name">Omar Ibrahim</p>
-            <p>Programme Associate</p>
-          </div>
+  <main>
+    <section class="team container">
+      <h1>Meet the dream team</h1>
+      <div class="images">
+        <div class="team-image">
+          <a href="https://www.linkedin.com/in/henry-tabansi/" target="_blank"><img src="assets/img/team/henry.webp"
+              alt="" /></a>
+          <p id="team-name">Henry Tabansi</p>
+          <p>
+            AIESEC International VP, People and Strategy <br />
+            (Global Project Manager)
+          </p>
         </div>
-      </section>
-    </main>
-    <footer>
-      <p style="color: white;margin-bottom: 25px;">
-        Made with 🤍, Powered by AIESEC,<br />
-        Developed by
-        <a
-          class="omar"
-          href="https://www.linkedin.com/in/omar-rwiheb-698a761b9/"
-          >Omar Rwiheb</a
-        >
-        and
-        <a class="omar" href="https://www.linkedin.com/in/limam-ahmed/"
-          >Ahmed Limam</a
-        >
-      </p>
-    </footer>
-    <script src="assets/js/script.js"></script>
-  </body>
+        <div class="team-image">
+          <a href="https://www.linkedin.com/in/aleyna-sayin" target="_blank"><img src="assets/img/team/aley.webp"
+              alt="" /></a>
+          <p id="team-name">Aleyna Sayin</p>
+          <p>Project Lead</p>
+        </div>
+        <div class="team-image">
+          <a href="https://www.linkedin.com/in/omar-rwiheb-698a761b9/" target="_blank"><img
+              src="assets/img/team/soory.webp" alt="" /></a>
+          <p id="team-name">Omar Rwiheb</p>
+          <p>IT & Tech Coordinator</p>
+        </div>
+        <div class="team-image">
+          <a href="https://www.linkedin.com/in/limam-ahmed/" target="_blank"><img src="assets/img/team/limam.webp"
+              alt="" /></a>
+          <p id="team-name">Ahmed Limam</p>
+          <p>IT & Tech Associate</p>
+        </div>
+        <div class="team-image">
+          <a href="www.linkedin.com/in/jeffrey-oba" target="_blank"><img src="assets/img/team/jeff.webp" alt="" /></a>
+          <p id="team-name">Jeffrey Oba</p>
+          <p>Marketing & Promotions Coordinator</p>
+        </div>
+        <div class="team-image">
+          <a href="www.linkedin.com/in/rabia-hanif-998109210/" target="_blank"><img src="assets/img/team/rabia.webp"
+              alt="" /></a>
+          <p id="team-name">Rabia Hanif</p>
+          <p>Marketing & Promotions Associate</p>
+        </div>
+        <div class="team-image">
+          <a href="https://www.linkedin.com/in/youssef-alaa-3638b319b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            target="_blank"><img src="assets/img/team/joe.webp" alt="" /></a>
+          <p id="team-name">Youssef Alaa</p>
+          <p>Marketing & Promotions Associate</p>
+        </div>
+        <div class="team-image">
+          <a href="https://www.linkedin.com/in/leysanjune/" target="_blank"><img src="assets/img/team/leysan.webp"
+              alt="" /></a>
+          <p id="team-name">Leysan Sharafutdinova</p>
+          <p>Programme Coordinator</p>
+        </div>
+        <div class="team-image">
+          <a href="www.linkedin.com/in/ahmed-hossam-983ab8233" target="_blank"><img src="assets/img/team/hossam.webp"
+              alt="" /></a>
+          <p id="team-name">Ahmed Hossam</p>
+          <p>Programme Associate</p>
+        </div>
+        <div class="team-image">
+          <a href="https://www.linkedin.com/in/sudara-sansali-de-silva?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            target="_blank"><img src="assets/img/team/sansali.webp" alt="" /></a>
+          <p id="team-name">Sudara Sansali</p>
+          <p>Programme Associate</p>
+        </div>
+        <div class="team-image">
+          <a href="https://www.linkedin.com/in/itsmeomaribrahim/" target="_blank"><img src="assets/img/team/omar.webp"
+              alt="" /></a>
+          <p id="team-name">Omar Ibrahim</p>
+          <p>Programme Associate</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p style="color: white;margin-bottom: 25px;">
+      Made with 🤍, Powered by AIESEC,<br />
+      Developed by
+      <a class="omar" href="https://www.linkedin.com/in/omar-rwiheb-698a761b9/">Omar Rwiheb</a>
+      and
+      <a class="omar" href="https://www.linkedin.com/in/limam-ahmed/">Ahmed Limam</a>
+    </p>
+  </footer>
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>
