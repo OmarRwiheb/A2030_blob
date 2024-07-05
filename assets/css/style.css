@@ -28,7 +28,7 @@
   --drak-blue: #2a44ff;
   --black: #2e2c30;
   --white: #ffff;
-  --smaller: .75;
+  --smaller: 0.75;
 }
 
 *,
@@ -1610,13 +1610,15 @@ ul {
   transition: 0.25s cubic-bezier(0.2, 0.49, 0.32, 0.99);
 }
 
-.popup-container, .error-popup-container {
+.popup-container,
+.error-popup-container {
   display: none;
   position: fixed;
   z-index: 99999;
 }
 
-.popup, .error-popup {
+.popup,
+.error-popup {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1666,7 +1668,8 @@ ul {
   }
 }
 
-.blocker, .error-blocker {
+.blocker,
+.error-blocker {
   position: fixed;
   top: 0;
   left: 0;
@@ -1678,7 +1681,8 @@ ul {
   height: 100%;
 }
 
-.close, .error-close {
+.close,
+.error-close {
   position: absolute;
   left: 17px;
   top: 17px;
@@ -1687,10 +1691,13 @@ ul {
   opacity: 1;
   z-index: 1;
 }
-.close:hover ,.error-close:hover {
+.close:hover,
+.error-close:hover {
   cursor: pointer;
 }
-.close:before, .error-close:before , .error-close:after,
+.close:before,
+.error-close:before,
+.error-close:after,
 .close:after {
   position: absolute;
   left: 15px;
@@ -1699,10 +1706,12 @@ ul {
   width: 2px;
   background-color: rgb(254, 249, 198);
 }
-.close:before,.error-close:before {
+.close:before,
+.error-close:before {
   transform: rotate(45deg);
 }
-.close:after,.error-close:after {
+.close:after,
+.error-close:after {
   transform: rotate(-45deg);
 }
 
@@ -1743,7 +1752,6 @@ ul {
   }
 }
 
-
 .team .images {
   display: flex;
   flex-wrap: wrap;
@@ -1777,7 +1785,6 @@ ul {
 .team-image a:hover {
   filter: grayscale(0.4);
 }
-
 
 .ranking {
   display: flex;
@@ -1836,8 +1843,6 @@ td.rank {
   text-transform: capitalize;
 }
 
-
-
 .event_output {
   display: flex;
   justify-content: center;
@@ -1860,7 +1865,7 @@ td.rank {
 }
 
 /* merch  */
-.merch-grid{
+.merch-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-content: center;
@@ -1869,7 +1874,7 @@ td.rank {
   margin: auto;
 }
 
-.merch-item{
+.merch-item {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1877,18 +1882,18 @@ td.rank {
   align-items: center;
 }
 
-.merch-item img{
+.merch-item img {
   width: 300px;
   border-radius: 25px;
 }
-.merch-item p{
+.merch-item p {
   font-family: "JosefinSans";
   color: var(--blue);
   text-align: center;
   font-size: 24px;
 }
 
-.merchandise h2{
+.merchandise h2 {
   margin-top: 70px;
   text-align: center;
   color: white;
@@ -1908,7 +1913,7 @@ ul.countdown-ul li span,
 .countdown-container {
   padding: 30px;
   border-radius: 20px;
-  background-image: linear-gradient(-206deg, #835EFF 0%, #FF008D 100%);
+  background-image: linear-gradient(-206deg, #835eff 0%, #ff008d 100%);
   color: white;
   margin: 0 auto;
   text-align: center;
@@ -1917,9 +1922,9 @@ ul.countdown-ul li span,
 }
 
 .squad-reveal-container {
-    padding: 30px;
+  padding: 30px;
   border-radius: 20px;
-  background-image: linear-gradient(-206deg, #835EFF 0%, #FF008D 100%);
+  background-image: linear-gradient(-206deg, #835eff 0%, #ff008d 100%);
   color: white;
   margin: 0 auto;
   text-align: center;
@@ -1963,23 +1968,29 @@ ul.countdown-ul li span {
     font-size: calc(1.5rem * var(--smaller));
   }
 
+  .popup,
+  .error-popup {
+    width: 90dvw;
+  }
+
   ul.countdown-ul li {
     font-size: calc(1.125rem * var(--smaller));
-    padding: calc(.1rem * var(--smaller));
+    padding: calc(0.1rem * var(--smaller));
   }
 
   ul.countdown-ul li span {
     font-size: calc(2rem * var(--smaller));
   }
 
-  .countdown-container, .squad-reveal-container {
+  .countdown-container,
+  .squad-reveal-container {
     padding: 30px 10px;
   }
 }
 
 .squads-headline {
   padding: 0px 40px;
-  font-family: 'JosefinSans';
+  font-family: "JosefinSans";
   font-size: 65px;
   color: white;
   word-wrap: break-word;
@@ -1987,7 +1998,7 @@ ul.countdown-ul li span {
 
 .squads-emails {
   /* padding: 0px 40px; */
-  font-family: 'JosefinSans';
+  font-family: "JosefinSans";
   color: white;
   word-wrap: break-word;
 }
@@ -1999,7 +2010,7 @@ ul.countdown-ul li span {
   border-radius: 25px;
   margin: 10px 0 10px 0;
   text-align: center;
-  width: 90%
+  width: 90%;
 }
 
 .reveal-btn {
