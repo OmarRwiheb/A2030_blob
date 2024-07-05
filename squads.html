@@ -196,7 +196,7 @@
                 });
                 formSquad.addEventListener('submit', (event) => {
                     event.preventDefault();
-                    const name = nameInput.value.trim();
+                    const name = nameInput.value.trim().toLowerCase();
 
                     if (name !== "") {
                         let foundSquad = null;
