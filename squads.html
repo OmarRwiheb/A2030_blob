@@ -104,9 +104,9 @@
 
     <main>
         <div class="error-popup-container">
-            <div class="blocker"></div>
+            <div class="error-blocker"></div>
             <div class="error-popup" style="min-width: 40dvw;">
-                <div id="close-btn" class="close"></div>
+                <div id="close-btn" class="error-close"></div>
                 <div class="squad-reveal-container">
                     <div class="popup-content" style=" padding: 30px 15px;">
                         <span>Please make sure that your email is correct and
@@ -156,14 +156,35 @@
             <a class="omar" href="https://www.linkedin.com/in/limam-ahmed/">Ahmed Limam</a>
         </p>
     </footer>
-    <script>const blocker = document.querySelector(".blocker");
+    <script>
+        const blocker = document.querySelector(".blocker");
+        const errorBlocker = document.querySelector(".error-blocker");
         const popup = document.querySelector(".popup-container");
         const close = document.querySelector(".close");
+        const errorClose = document.querySelector(".error-close");
         const revealBtn = document.querySelector(".reveal-btn");
         const formSquad = document.querySelector(".form-squad");
         const squadEmails = document.querySelector(".squads-emails");
         const emailInput = document.querySelector(".squads-input");
+        const squadLink = document.querySelector(".squad-link");
         const errorPopup = document.querySelector(".error-popup-container");
+
+
+        blocker.addEventListener("click", () => {
+            popup.style.display = "none";
+        });
+
+        close.addEventListener("click", () => {
+            popup.style.display = "none";
+        });
+
+        errorBlocker.addEventListener("click", () => {
+            errorPopup.style.display = "none";
+        });
+
+        errorClose.addEventListener("click", () => {
+            errorPopup.style.display = "none";
+        });
 
         squads = [
             { "emails": ["ahmed.limam2@aiesec.net", "omarrwiheb@aiesec.net", "someonelse@aiesec.net"], "link": "//telegram.com" },
@@ -199,16 +220,7 @@
                 errorPopup.style.display = "block";
             }
         });
-
-        blocker.addEventListener("click", () => {
-            popup.style.display = "none";
-            errorPopup.style.display = "none";
-        });
-
-        close.addEventListener("click", () => {
-            popup.style.display = "none";
-            errorPopup.style.display = "none";
-        });</script>
+    </script>
     <script src="assets/js/script.js"></script>
 </body>
 

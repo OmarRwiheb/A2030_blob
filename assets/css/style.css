@@ -1666,7 +1666,7 @@ ul {
   }
 }
 
-.blocker {
+.blocker, .error-blocker {
   position: fixed;
   top: 0;
   left: 0;
@@ -1678,7 +1678,7 @@ ul {
   height: 100%;
 }
 
-.close {
+.close, .error-close {
   position: absolute;
   left: 17px;
   top: 17px;
