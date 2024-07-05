@@ -27,6 +27,8 @@
                     <li><a href="/">Home</a></li>
                     <li><a href="team.html">Meet the Team</a></li>
                     <li><a href="https://www.hub.aiesec.org/a2025">A2025 MTD</a></li>
+                    <li><a href="squads.html">Squads</a></li>
+
                     <li>
                         <div class="user-list">
                             <div class="user-list-header">
@@ -109,7 +111,7 @@
                 <div id="close-btn" class="error-close"></div>
                 <div class="squad-reveal-container">
                     <div class="popup-content" style=" padding: 30px 15px;">
-                        <span>Please make sure that your email is correct and
+                        <span>Please make sure that your full name is written correcty and
                             that you have registered.</span><br>
                     </div>
                 </div>
@@ -141,7 +143,7 @@
                 <div
                     style="min-width: 40dvw; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);text-align: center;">
                     <h1 class="squads-headline">Your Email</h1>
-                    <input type="email" class="squads-input" placeholder="example@aiesec.net">
+                    <input type="text" class="squads-input" placeholder="example@aiesec.net">
                     <button class="reveal-btn" type="submit">Reveal ✨</button>
                 </div>
             </div>
@@ -165,7 +167,7 @@
         const revealBtn = document.querySelector(".reveal-btn");
         const formSquad = document.querySelector(".form-squad");
         const squadEmails = document.querySelector(".squads-emails");
-        const emailInput = document.querySelector(".squads-input");
+        const nameInput = document.querySelector(".squads-input");
         const squadLink = document.querySelector(".squad-link");
         const errorPopup = document.querySelector(".error-popup-container");
 
@@ -186,40 +188,44 @@
             errorPopup.style.display = "none";
         });
 
-        squads = [
-            { "emails": ["ahmed.limam2@aiesec.net", "omarrwiheb@aiesec.net", "someonelse@aiesec.net"], "link": "//telegram.com" },
-            { "emails": ["hehe@gmail.com", "wow@aiesec.net"], "link": "#" }
-        ];
+        fetch('assets/squads.json')
+            .then(response => response.json())
+            .then(data => {
+                data.forEach(squad => {
+                    squad.squad = squad.squad.map(member => member.trim().toLowerCase());
+                });
+                formSquad.addEventListener('submit', (event) => {
+                    event.preventDefault();
+                    const name = nameInput.value.trim();
 
-        function validateEmail(email) {
-            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return re.test(email);
-        }
+                    if (name !== "") {
+                        let foundSquad = null;
+                        let link = null;
 
-        formSquad.addEventListener('submit', (event) => {
-            event.preventDefault();
-            const email = emailInput.value.trim().toLowerCase();
-            if (email !== "" && validateEmail(email)) {
-                let foundEmails = null;
-                let link = null;
-                for (let squad of squads) {
-                    if (squad.emails.includes(email)) {
-                        foundEmails = squad.emails.filter(e => e !== email);
-                        link = squad.link;
-                        break;
+                        // Iterate over each squad object in the JSON data
+                        for (let squad of data) {
+                            // console.log(squad.squad);
+                            if (squad.squad.includes(name)) {
+                                foundSquad = squad.squad.filter(member => member !== name);
+                                link = squad.link;
+                                break;
+                            }
+                        }
+
+                        if (foundSquad) {
+                            squadLink.href = link;
+                            const capitalizedNames = foundSquad.map(member => member.charAt(0).toUpperCase() + member.slice(1));
+                            squadEmails.innerHTML = capitalizedNames.join(', ');;
+                            popup.style.display = "block";
+                        } else {
+                            errorPopup.style.display = "block";
+                        }
                     }
-                }
-                if (foundEmails) {
-                    squadLink.href = link;
-                    squadEmails.innerHTML = foundEmails.join(', ');
-                    popup.style.display = "block";
-                } else {
-                    errorPopup.style.display = "block";
-                }
-            } else {
-                errorPopup.style.display = "block";
-            }
-        });
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching JSON data:', error);
+            });
     </script>
     <script src="assets/js/script.js"></script>
 </body>

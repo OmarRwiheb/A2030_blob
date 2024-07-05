@@ -1687,10 +1687,10 @@ ul {
   opacity: 1;
   z-index: 1;
 }
-.close:hover {
+.close:hover ,.error-close:hover {
   cursor: pointer;
 }
-.close:before,
+.close:before, .error-close:before , .error-close:after,
 .close:after {
   position: absolute;
   left: 15px;
@@ -1699,10 +1699,10 @@ ul {
   width: 2px;
   background-color: rgb(254, 249, 198);
 }
-.close:before {
+.close:before,.error-close:before {
   transform: rotate(45deg);
 }
-.close:after {
+.close:after,.error-close:after {
   transform: rotate(-45deg);
 }
 
@@ -1986,7 +1986,7 @@ ul.countdown-ul li span {
 }
 
 .squads-emails {
-  padding: 0px 40px;
+  /* padding: 0px 40px; */
   font-family: 'JosefinSans';
   color: white;
   word-wrap: break-word;
