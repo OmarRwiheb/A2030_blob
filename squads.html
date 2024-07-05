@@ -124,6 +124,8 @@
                 <div class="squad-reveal-container">
                     <div class="popup-content" style=" padding: 30px 15px;">
                         <p style="font-size: 30px; font-weight: 800;">This is your squad! 🤩</p><br>
+                        <p class="squad-info" style="font-size: 24px; font-weight: 600; margin-bottom: 10px;">Squad 2 |
+                            OD</p>
                         <p class="squads-emails"></p><br>
                         <a href="#" class="squad-link"
                             style="color: white; font-size: 20px; font-weight: 800; text-decoration: none;cursor: pointer;">Join
@@ -170,6 +172,7 @@
         const nameInput = document.querySelector(".squads-input");
         const squadLink = document.querySelector(".squad-link");
         const errorPopup = document.querySelector(".error-popup-container");
+        const squadInfo = document.querySelector(".squad-info");
 
 
         blocker.addEventListener("click", () => {
@@ -201,6 +204,8 @@
                     if (name !== "") {
                         let foundSquad = null;
                         let link = null;
+                        let sname = null;
+                        let funct = null;
 
                         // Iterate over each squad object in the JSON data
                         for (let squad of data) {
@@ -208,14 +213,18 @@
                             if (squad.squad.includes(name)) {
                                 foundSquad = squad.squad.filter(member => member !== name);
                                 link = squad.link;
+                                sname = squad.squad_name;
+                                funct = squad.function;
                                 break;
                             }
                         }
 
                         if (foundSquad) {
+                            // console.log(foundSquad);
                             squadLink.href = link;
                             const capitalizedNames = foundSquad.map(member => member.charAt(0).toUpperCase() + member.slice(1));
-                            squadEmails.innerHTML = capitalizedNames.join(', ');;
+                            squadEmails.innerHTML = capitalizedNames.join('</br>');
+                            squadInfo.innerHTML = sname + " | " + funct + " 🔥";
                             popup.style.display = "block";
                         } else {
                             errorPopup.style.display = "block";
