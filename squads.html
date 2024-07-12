@@ -206,31 +206,49 @@
                         let link = null;
                         let sname = null;
                         let funct = null;
+                        let partialMatches = []; // To store partial matches
 
                         // Iterate over each squad object in the JSON data
                         for (let squad of data) {
-                            // console.log(squad.squad);
+                            // Check if the name is found in the squad
                             if (squad.squad.includes(name)) {
                                 foundSquad = squad.squad.filter(member => member !== name);
                                 link = squad.link;
                                 sname = squad.squad_name;
                                 funct = squad.function;
                                 break;
+                            } else {
+                                // Collect partial matches for logging later
+                                if (name.length > 2) {
+                                    for (let member of squad.squad) {
+                                        if (member.includes(name)) {
+                                            partialMatches.push({ member: member, squad: squad.squad_name, link: squad.link });
+                                        }
+                                    }
+                                }
                             }
                         }
 
                         if (foundSquad) {
-                            // console.log(foundSquad);
+                            squadLink.innerHTML = "Join Telegram Group 💫";
                             squadLink.href = link;
                             const capitalizedNames = foundSquad.map(member => member.charAt(0).toUpperCase() + member.slice(1));
                             squadEmails.innerHTML = capitalizedNames.join('</br>');
                             squadInfo.innerHTML = sname + " | " + funct + " 🔥";
                             popup.style.display = "block";
                         } else {
-                            errorPopup.style.display = "block";
+                            if (partialMatches.length > 0) {
+                                squadInfo.innerHTML = "";
+                                squadLink.innerHTML = "";
+                                squadEmails.innerHTML = partialMatches.map(match => `${match.member} (Squad: ${match.squad} | <a style='color:white;' href='${match.link}'>Telegram</a>)`).join('</br>');
+                                popup.style.display = "block";
+                            } else {
+                                errorPopup.style.display = "block";
+                            }
                         }
                     }
-                });
+                }
+                );
             })
             .catch(error => {
                 console.error('Error fetching JSON data:', error);
