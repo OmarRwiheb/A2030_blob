@@ -240,7 +240,7 @@
                             if (partialMatches.length > 0) {
                                 squadInfo.innerHTML = "";
                                 squadLink.innerHTML = "";
-                                squadEmails.innerHTML = partialMatches.map(match => `${match.member} (Squad: ${match.squad} | <a style='color:white;' href='${match.link}'>Telegram</a>)`).join('</br>');
+                                squadEmails.innerHTML = partialMatches.map(match => `${match.member} (${match.squad} | <a style='color:white;' href='${match.link}'>Telegram</a>)`).join('</br>');
                                 popup.style.display = "block";
                             } else {
                                 errorPopup.style.display = "block";
